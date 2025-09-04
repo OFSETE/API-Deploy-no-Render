@@ -78,12 +78,12 @@ Opção B: Deploy manual (Web Service)
 
 Após o deploy, atualize aqui com a URL pública do serviço:
 
-API pública: https://SEU-SUBDOMINIO.onrender.com
+API pública: https://api-deploy-no-render.onrender.com/docs
 
 Endpoints:
 
-- https://SEU-SUBDOMINIO.onrender.com/health
-- https://SEU-SUBDOMINIO.onrender.com/me
+- https://api-deploy-no-render.onrender.com/health
+- https://api-deploy-no-render.onrender.com/me
 
 ### Testes
 
