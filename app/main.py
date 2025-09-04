@@ -25,11 +25,11 @@ def me():
     interests_raw = _get_env("ME_INTERESTS", "Python,APIs,Cloud")
     interests = [i.strip() for i in interests_raw.split(",") if i.strip()]
     data = {
-        "name": _get_env("ME_NAME", "Seu Nome"),
-        "email": _get_env("ME_EMAIL", "seu.email@example.com"),
-        "course": _get_env("ME_COURSE", "Seu Curso"),
-        "github": _get_env("ME_GITHUB", "https://github.com/seuusuario"),
-        "city": _get_env("ME_CITY", "Sua Cidade"),
+        "name": _get_env("ME_NAME", "Matheus Filipe"),
+        "email": _get_env("ME_EMAIL", "37023311@sempreunijuazeiro.com.br"),
+        "course": _get_env("ME_COURSE", "Sistemas da informação"),
+        "github": _get_env("ME_GITHUB", "https://github.com/OFSETE"),
+        "city": _get_env("ME_CITY", "Python,APIs,Cloud"),
         "interests": interests,
     }
     return JSONResponse(content=data)
