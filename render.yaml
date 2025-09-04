@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: aluno-api
+    runtime: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+      # Exemplo de dados do aluno; altere no painel do Render conforme necessário
+      - key: ME_NAME
+        value: "Seu Nome"
+      - key: ME_EMAIL
+        value: "seu.email@example.com"
+      - key: ME_COURSE
+        value: "Seu Curso"
+      - key: ME_GITHUB
+        value: "https://github.com/seuusuario"
+      - key: ME_CITY
+        value: "Sua Cidade"
+      - key: ME_INTERESTS
+        value: "Python,APIs,Cloud"
